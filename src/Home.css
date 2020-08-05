@@ -3,9 +3,9 @@
 }
 
 .Title-ct {
-    display: flex;
+    display: block;
     justify-content: center;
-    min-height: 360px;
+    height: 320px;
     align-items: center;
 }
 
@@ -13,6 +13,14 @@
     font-weight: 800;
     color: white;
     font-size: 8vw;
+    font-family: "NanumSquare";
+    padding-top: 100px;
+}
+
+.Title-subtitle {
+    font-weight: 800;
+    color: white;
+    font-size: 3vw;
     font-family: "NanumSquare";
 }
 
@@ -23,14 +31,21 @@
 .Header {
     font-weight: 1000;
     color: rgb(85, 85, 85);
-    font-size: 48px;
+    font-size: 36px;
     font-family: "NanumSquare";
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.Botproject-card {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Intro-ct {
-    display: flex;
-    height: 300px;
+    display: block;
+    height: 1000px;
     justify-content: center;
 }
 

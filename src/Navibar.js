@@ -8,12 +8,13 @@ import azalea from './imgs/Azalea.jpg'
 import rtbot from './imgs/rtbot.jpg'
 
 import config from './config.json'
+import './index.css'
 
 export default class Navibar extends Component {
   render() {
     return (
-      <Navbar bg="white" expand="sm" fixed="top" className="shadow rounded" classname="nav-item">
-        <Navbar.Brand href="#home">
+      <Navbar bg="white" expand="sm" fixed="top" className="nav-item shadow rounded no-drag">
+        <Navbar.Brand href="/">
           <img src={logo} style={{ width: 40, marginRight: 10 }} />
           InfiniteTeam
         </Navbar.Brand>
