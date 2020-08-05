@@ -3,16 +3,16 @@ import { Nav, Navbar, Form, NavDropdown, Button, FormControl } from 'react-boots
 
 import logo from './logo.png'
 import discordicon from './imgs/Discord-Logo-Black.svg'
-import navercafe from './imgs/navercafe.png'
-import azalea from './imgs/Azalea.png'
-import rtbot from './imgs/rtbot.png'
+import navercafe from './imgs/navercafe.jpg'
+import azalea from './imgs/Azalea.jpg'
+import rtbot from './imgs/rtbot.jpg'
 
 import config from './config.json'
 
 export default class Navibar extends Component {
   render() {
     return (
-      <Navbar bg="white" expand="sm" fixed className="shadow rounded" classname="nav-item">
+      <Navbar bg="white" expand="sm" fixed="top" className="shadow rounded" classname="nav-item">
         <Navbar.Brand href="#home">
           <img src={logo} style={{ width: 40, marginRight: 10 }} />
           InfiniteTeam

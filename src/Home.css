@@ -1,19 +1,64 @@
 .Title-section-bg {
     background-image: linear-gradient(120deg, #81f1ab 0%, #8aebee 100%);
-    height: 300px;
-    font-family: "NanumSquare";
 }
 
 .Title-ct {
     display: flex;
-    height: 300px;
     justify-content: center;
+    min-height: 360px;
     align-items: center;
 }
 
 .Title-title {
     font-weight: 800;
     color: white;
-    font-size: 60pt;
-    text-shadow: 2, 2, 2, whitesmoke;
+    font-size: 8vw;
+    font-family: "NanumSquare";
+}
+
+.Intro-section-bg {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.Header {
+    font-weight: 1000;
+    color: rgb(85, 85, 85);
+    font-size: 48px;
+    font-family: "NanumSquare";
+    margin-top: 2rem;
+}
+
+.Intro-ct {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+}
+
+
+@media (min-width: 768px) and (min-width: 991px){
+    .Title-section-bg {
+        height: 400px;
+    }
+    .Title-ct {
+        height: 420px;
+    }
+}
+
+@media (min-width: 992px) and (min-width: 1199px){
+    .Title-section-bg {
+        height: 300px;
+    }
+    .Title-ct {
+        height: 360px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Title-section-bg {
+        height: 500px;
+    }
+    .Title-ct {
+        height: 550px;
+    }
+    
 }
