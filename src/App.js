@@ -1,13 +1,12 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
 import Navibar from './Navibar'
 
-function App() {
-  return (
-    <>
-      <Navibar />
-    </>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        <Navibar />
+      </>
+    );
+  }
 }
-
-export default App;
