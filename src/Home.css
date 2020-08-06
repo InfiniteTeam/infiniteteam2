@@ -1,5 +1,6 @@
 .Title-section-bg {
     background-image: linear-gradient(120deg, #81f1ab 0%, #8aebee 100%);
+    height: 320px;
 }
 
 .Title-ct {
@@ -12,15 +13,15 @@
 .Title-title {
     font-weight: 800;
     color: white;
-    font-size: 8vw;
+    font-size: 9vw;
     font-family: "NanumSquare";
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .Title-subtitle {
     font-weight: 800;
     color: white;
-    font-size: 3vw;
+    font-size: 5vw;
     font-family: "NanumSquare";
 }
 
@@ -38,9 +39,12 @@
 }
 
 .Botproject-card {
-    width: 270px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .Intro-ct {
@@ -49,7 +53,6 @@
     justify-content: center;
 }
 
-
 @media (min-width: 768px) and (min-width: 991px){
     .Title-section-bg {
         height: 400px;
@@ -57,14 +60,26 @@
     .Title-ct {
         height: 420px;
     }
+    .Title-subtitle {
+        font-size: 4vw;
+    }
+    .Botproject-card {
+        width: 450px;
+    }
 }
 
 @media (min-width: 992px) and (min-width: 1199px){
     .Title-section-bg {
-        height: 300px;
+        height: 360px;
     }
     .Title-ct {
         height: 360px;
+    }
+    .Title-subtitle {
+        font-size: 1.2vw;
+    }
+    .Title-title {
+        font-size: 4vw;
     }
 }
 
@@ -74,6 +89,20 @@
     }
     .Title-ct {
         height: 550px;
+    }
+    .Title-subtitle {
+        font-size: 3vw;
+    }
+    .Title-title {
+        font-size: 8vw;
+    }
+    .Botproject-card {
+        width: 500px;
+    }
+    .Botproject-img {
+        margin-left: 14px;
+        margin-right: -14px;
+        
     }
     
 }

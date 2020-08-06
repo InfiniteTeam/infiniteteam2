@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom';
 import App from './App';
 import Home from './Home';
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.css'
+
+import 'bootstrap/dist/css/bootstrap.css';
+import './index.css';
+import './Home.css';
 
 ReactDOM.render(
   <React.StrictMode>

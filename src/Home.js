@@ -1,13 +1,31 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
-import azalea from './imgs/Azalea.jpg'
-
-import './Home.css'
-import './index.css'
+import botlist from './datas/botlist';
 
 export default class Home extends Component {
   render() {
+    const bots = botlist.map(
+      (one) => (
+        <Col xl={6} lg={6} md={12}>
+          <Card className="Botproject-card flex-row flex-wrap">
+            <Col xl={4} lg={5} xs={9} className="Botproject-img">
+              <Card.Img variant="top" src={one.img}/>
+            </Col>
+            <Col xl={8} lg={7}>
+              <Card.Body>
+                <Card.Title>{one.title}</Card.Title>
+                <Card.Text>
+                  {one.description}
+                </Card.Text>
+                <Button variant="primary">초대하기</Button>
+              </Card.Body>
+            </Col>
+          </Card>
+        </Col>
+      )
+    )
+
     return (
       <>
         <div style={{marginTop: 65.94}}/>
@@ -27,46 +45,8 @@ export default class Home extends Component {
               디스코드 봇 프로젝트
             </h1>
             <Container>
-              <Row>
-                <Col xl={4} lg={3} md={6}>
-                  <Card className="Botproject-card">
-                    <Card.Img variant="top" src={azalea} />
-                    <Card.Body>
-                      <Card.Title>Azalea</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                      </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col xl={4} lg={3} md={6}>
-                  <Card className="Botproject-card">
-                    <Card.Img variant="top" src={azalea} />
-                    <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                      </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col xl={4} lg={3} md={6}>
-                  <Card className="Botproject-card">
-                    <Card.Img variant="top" src={azalea} />
-                    <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                      </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                  </Card>
-                </Col>
+              <Row className="no-gutters">
+                {bots}
               </Row>
             </Container>
           </Container>

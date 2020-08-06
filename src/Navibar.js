@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, Form, NavDropdown, Button, FormControl } from 'react-bootstrap'
+import { Nav, Navbar, Form, NavDropdown, Button, FormControl } from 'react-bootstrap';
 
-import logo from './logo.png'
-import discordicon from './imgs/Discord-Logo-Black.svg'
-import navercafe from './imgs/navercafe.jpg'
-import azalea from './imgs/Azalea.jpg'
-import rtbot from './imgs/rtbot.jpg'
+import logo from './logo.png';
+import discordicon from './imgs/Discord-Logo-Black.svg';
+import navercafe from './imgs/navercafe.jpg';
+import azalea from './imgs/Azalea.jpg';
+import rtbot from './imgs/rtbot.jpg';
 
-import config from './config.json'
-import './index.css'
+import config from './config.json';
 
 export default class Navibar extends Component {
   render() {
