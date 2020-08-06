@@ -87,7 +87,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://new.infiniteteam.me",
   "jest": {
     "roots": [
       "<rootDir>/src"
@@ -142,5 +141,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "homepage": "./"
 }

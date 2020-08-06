@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.06dd0fe0.chunk.css",
+    "main.js": "./static/js/main.dfd23f49.chunk.js",
+    "main.js.map": "./static/js/main.dfd23f49.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.f7068efe.js",
+    "runtime-main.js.map": "./static/js/runtime-main.f7068efe.js.map",
+    "static/css/2.829c9cb5.chunk.css": "./static/css/2.829c9cb5.chunk.css",
+    "static/js/2.b987d8aa.chunk.js": "./static/js/2.b987d8aa.chunk.js",
+    "static/js/2.b987d8aa.chunk.js.map": "./static/js/2.b987d8aa.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.f5449cef3e1f223b8fd529630bb5a52c.js": "./precache-manifest.f5449cef3e1f223b8fd529630bb5a52c.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "./static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.06dd0fe0.chunk.css.map": "./static/css/main.06dd0fe0.chunk.css.map",
+    "static/js/2.b987d8aa.chunk.js.LICENSE.txt": "./static/js/2.b987d8aa.chunk.js.LICENSE.txt",
+    "static/media/Azalea.jpg": "./static/media/Azalea.5710b626.jpg",
+    "static/media/Discord-Logo-Black.svg": "./static/media/Discord-Logo-Black.41484d92.svg",
+    "static/media/logo.png": "./static/media/logo.b9e38daf.png",
+    "static/media/navercafe.jpg": "./static/media/navercafe.88af2587.jpg",
+    "static/media/rtbot.jpg": "./static/media/rtbot.24db7028.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7068efe.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.b987d8aa.chunk.js",
+    "static/css/main.06dd0fe0.chunk.css",
+    "static/js/main.dfd23f49.chunk.js"
+  ]
+}

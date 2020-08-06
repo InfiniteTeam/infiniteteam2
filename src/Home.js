@@ -18,7 +18,13 @@ export default class Home extends Component {
                 <Card.Text className="Botproject-card-dsec">
                   {one.description}
                 </Card.Text>
-                <Button variant="infinite">초대하기</Button>
+                {
+                one.invite
+                  ? <Button variant="infinite">초대하기</Button>
+                  : <Button variant="infinite" disabled>개발중</Button>
+                }
+                <Card.Link />
+                <Card.Link className="text-infinite" href="#">자세히 보기</Card.Link>
               </Card.Body>
             </Col>
           </Card>
