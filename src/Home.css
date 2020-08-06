@@ -39,12 +39,22 @@
 }
 
 .Botproject-card {
-    width: 400px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
+}
+
+.Botproject-card-title {
+    font-family: "NanumSquare";
+    font-weight: 1000;
+    font-size: 24px;
+}
+
+.Botproject-card-dsec {
+    font-family: "NanumBarunGothic";
 }
 
 .Intro-ct {
@@ -64,7 +74,7 @@
         font-size: 4vw;
     }
     .Botproject-card {
-        width: 450px;
+        width: 420px;
     }
 }
 

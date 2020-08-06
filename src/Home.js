@@ -7,18 +7,18 @@ export default class Home extends Component {
   render() {
     const bots = botlist.map(
       (one) => (
-        <Col xl={6} lg={6} md={12}>
+        <Col xl={6} lg={6} md={6}>
           <Card className="Botproject-card flex-row flex-wrap">
             <Col xl={4} lg={5} xs={9} className="Botproject-img">
-              <Card.Img variant="top" src={one.img}/>
+              <Card.Img variant="top" src={one.img} style={{marginTop: '1rem'}}/>
             </Col>
             <Col xl={8} lg={7}>
               <Card.Body>
-                <Card.Title>{one.title}</Card.Title>
-                <Card.Text>
+                <Card.Title className="Botproject-card-title">{one.title}</Card.Title>
+                <Card.Text className="Botproject-card-dsec">
                   {one.description}
                 </Card.Text>
-                <Button variant="primary">초대하기</Button>
+                <Button variant="infinite">초대하기</Button>
               </Card.Body>
             </Col>
           </Card>
