@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 import botlist from '../datas/botlist';
-import Title from '../Title'
+import Title from '../components/Title'
 
 export default class Home extends Component {
   render() {
@@ -11,7 +11,7 @@ export default class Home extends Component {
         <Col xl={6} lg={6} md={6}>
           <Card className="Botproject-card flex-row flex-wrap">
             <Col xl={4} lg={5} xs={9} className="Botproject-img">
-              <Card.Img variant="top" src={one.img} style={{marginTop: '1rem'}}/>
+              <Card.Img variant="top" src={one.img} style={{ marginTop: '1rem' }} />
             </Col>
             <Col xl={8} lg={7}>
               <Card.Body>
@@ -20,26 +20,26 @@ export default class Home extends Component {
                   {one.description}
                 </Card.Text>
                 {
-                one.invite
-                  ? <>
-                    <Button
-                    as="a"
-                    variant="infinite"
-                    className="Botproject-card-btn"
-                    href={one.invite}
-                    target="_blank"
-                    >
-                      초대하기
+                  one.invite
+                    ? <>
+                      <Button
+                        as="a"
+                        variant="infinite"
+                        className="Botproject-card-btn"
+                        href={one.invite}
+                        target="_blank"
+                      >
+                        초대하기
                     </Button>
-                    <Card.Link />
-                    <Card.Link
-                    className="Botproject-card-link text-infinite no-drag"
-                    href="#"
-                    >
-                      자세히 보기
+                      <Card.Link />
+                      <Card.Link
+                        className="Botproject-card-link text-infinite no-drag"
+                        href="#"
+                      >
+                        자세히 보기
                     </Card.Link>
                     </>
-                  : <Button variant="infinite" disabled>개발중</Button>
+                    : <Button variant="infinite" disabled>개발중</Button>
                 }
               </Card.Body>
             </Col>
@@ -50,7 +50,7 @@ export default class Home extends Component {
 
     return (
       <>
-        <Title title="InfiniteTeam" subtitle="무한한 미래를 만들어갑니다"/>
+        <Title title="InfiniteTeam" subtitle="무한한 미래를 만들어갑니다" />
         <Container fluid>
           <Container fluid="sm" className="Intro-ct">
             <h1 className="Header no-drag">

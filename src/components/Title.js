@@ -5,7 +5,6 @@ export default class Title extends Component {
   render() {
     return (
       <>
-        <div style={{marginTop: 65.94}}/>
         <Container fluid className="Title-section-bg no-drag">
           <Container fluid="sm" className="Title-ct text-center">
             <h1 className="Title-title">
