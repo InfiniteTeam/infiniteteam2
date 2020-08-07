@@ -32,7 +32,7 @@
 .Header {
     font-weight: 1000;
     color: rgb(85, 85, 85);
-    font-size: 36px;
+    font-size: 32pt;
     font-family: "NanumSquare";
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -50,11 +50,19 @@
 .Botproject-card-title {
     font-family: "NanumSquare";
     font-weight: 1000;
-    font-size: 24px;
+    font-size: 18pt;
 }
 
 .Botproject-card-dsec {
     font-family: "NanumBarunGothic";
+}
+
+.Botproject-card-btn {
+    font-family: "NanumSquare";
+}
+
+.Botproject-card-link {
+    font-family: "NanumSquare";
 }
 
 .Intro-ct {
@@ -75,6 +83,13 @@
     }
     .Botproject-card {
         width: 420px;
+    }
+    .Botproject-card-btn {
+        margin-bottom: 0.25rem;
+    }
+    .Botproject-card-link {
+        display: flex;
+        margin-left: 0 !important;
     }
 }
 
@@ -101,18 +116,20 @@
         height: 550px;
     }
     .Title-subtitle {
-        font-size: 3vw;
+        font-size: 50pt;
     }
     .Title-title {
-        font-size: 8vw;
+        font-size: 120pt;
     }
     .Botproject-card {
         width: 500px;
     }
     .Botproject-img {
         margin-left: 14px;
-        margin-right: -14px;
-        
+        margin-right: -14px;   
     }
-    
+    .Botproject-card-link {
+        display: inline;
+        margin-left: 0.75rem !important;
+    }
 }
