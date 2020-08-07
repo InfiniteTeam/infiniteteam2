@@ -82,15 +82,13 @@
 .Title-title {
     font-weight: 800;
     color: white;
-    font-size: 9vw;
     font-family: "NanumSquare";
-    padding-top: 80px;
+    padding-top: 110px;
 }
 
 .Title-subtitle {
     font-weight: 800;
     color: white;
-    font-size: 5vw;
     font-family: "NanumSquare";
 }
 
@@ -104,7 +102,6 @@
 }
 
 .Botproject-card {
-    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
@@ -128,27 +125,12 @@
 
 .Botproject-card-link {
     font-family: "NanumSquare";
+    margin-top: 5px;
 }
 
-@media (min-width: 768px) and (min-width: 991px) {
-    .Title-section-bg {
-        height: 400px;
-    }
-
-    .Title-ct {
-        height: 420px;
-    }
-
+@include media-breakpoint-up(xs) {
     .Title-subtitle {
-        font-size: 4vw;
-    }
-
-    .Botproject-card {
-        max-width: 420px;
-    }
-
-    .Botproject-card-btn {
-        margin-bottom: 0.25rem;
+        font-size: 25px;
     }
 
     .Botproject-card-link {
@@ -157,44 +139,82 @@
     }
 }
 
-@media (min-width: 992px) and (min-width: 1199px) {
+@include media-breakpoint-up(sm) {
     .Title-section-bg {
-        height: 360px;
+        height: 400px;
     }
 
     .Title-ct {
-        height: 360px;
-    }
-
-    .Title-subtitle {
-        font-size: 1.2vw;
+        height: 400px;
     }
 
     .Title-title {
+        font-size: 8vw;
+    }
+
+    .Title-subtitle {
+        font-size: 4.2vw;
+    }
+
+    .Botproject-card {
+        max-width: 300px;
+    }
+
+    .Botproject-card-btn {
+        margin-bottom: 0.25rem;
+    }
+
+    .Botproject-card-link {
+        display: inline;
+        margin-left: 0.75rem !important;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Title-section-bg {
+        height: 400px;
+    }
+
+    .Title-ct {
+        height: 400px;
+    }
+
+    .Title-subtitle {
         font-size: 4vw;
     }
 
+    .Title-title {
+        font-size: 8vw;
+    }
+
+    .Botproject-card {
+        max-width: 300px;
+    }
+    .Botproject-card-link {
+        display: inline;
+        margin-left: 0.75rem !important;
+    }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(lg) {
     .Title-section-bg {
         height: 500px;
     }
 
     .Title-ct {
-        height: 550px;
+        height: 500px;
     }
 
     .Title-subtitle {
-        font-size: 50pt;
+        font-size: 40pt;
     }
 
     .Title-title {
-        font-size: 120pt;
+        font-size: 100pt;
     }
 
     .Botproject-card {
-        max-width: 500px;
+        max-width: 435px;
     }
 
     .Botproject-img {
@@ -202,6 +222,16 @@
         margin-right: -14px;
     }
 
+    .Botproject-card-link {
+        display: inline;
+        margin-left: 0.75rem !important;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .Botproject-card {
+        max-width: 500px;
+    }
     .Botproject-card-link {
         display: inline;
         margin-left: 0.75rem !important;
