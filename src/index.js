@@ -1,19 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
-import App from './App';
-import Home from './Home';
 import * as serviceWorker from './serviceWorker';
+
+import App from './App';
+import Home from './pages/Home';
+import Azalea from './pages/bots/Azalea'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import './Home.css';
+import './pages/Home.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
       <Route path="/" component={Home} />
+      <Route path="bots" component={Azalea}>
+      </Route>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
-import botlist from './datas/botlist';
+import botlist from '../datas/botlist';
+import Title from '../Title'
 
 export default class Home extends Component {
   render() {
@@ -20,11 +21,26 @@ export default class Home extends Component {
                 </Card.Text>
                 {
                 one.invite
-                  ? <Button variant="infinite" className="Botproject-card-btn">초대하기</Button>
+                  ? <>
+                    <Button
+                    as="a"
+                    variant="infinite"
+                    className="Botproject-card-btn"
+                    href={one.invite}
+                    target="_blank"
+                    >
+                      초대하기
+                    </Button>
+                    <Card.Link />
+                    <Card.Link
+                    className="Botproject-card-link text-infinite no-drag"
+                    href="#"
+                    >
+                      자세히 보기
+                    </Card.Link>
+                    </>
                   : <Button variant="infinite" disabled>개발중</Button>
                 }
-                <Card.Link />
-                <Card.Link className="Botproject-card-link text-infinite" href="#">자세히 보기</Card.Link>
               </Card.Body>
             </Col>
           </Card>
@@ -34,20 +50,10 @@ export default class Home extends Component {
 
     return (
       <>
-        <div style={{marginTop: 65.94}}/>
-        <Container fluid className="Title-section-bg no-drag">
-          <Container fluid="sm" className="Title-ct text-center">
-            <h1 className="Title-title">
-              InfiniteTeam
-            </h1>
-            <h3 className="Title-subtitle">
-              무한한 미래를 만들어갑니다
-            </h3>
-          </Container>
-        </Container>
+        <Title title="InfiniteTeam" subtitle="무한한 미래를 만들어갑니다"/>
         <Container fluid>
           <Container fluid="sm" className="Intro-ct">
-            <h1 className="Header">
+            <h1 className="Header no-drag">
               디스코드 봇 프로젝트
             </h1>
             <Container>

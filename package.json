@@ -142,5 +142,8 @@
       "react-app"
     ]
   },
-  "homepage": "https://new.infiniteteam.me"
+  "homepage": "https://new.infiniteteam.me",
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
 }
