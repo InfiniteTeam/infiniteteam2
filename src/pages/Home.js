@@ -50,7 +50,7 @@ export default class Home extends Component {
 
     return (
       <>
-        <Title title="InfiniteTeam" subtitle="무한한 미래를 만들어갑니다" />
+        <Title title="InfiniteTeam" subtitle="무한한 미래를 만들어갑니다" className="Title-gradient"/>
         <Container fluid>
           <Container fluid="sm" className="Intro-ct">
             <h1 className="Header no-drag">

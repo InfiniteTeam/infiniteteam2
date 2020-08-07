@@ -25,7 +25,7 @@ export default class Navibar extends Component {
               <Nav className="mr-auto">
                 <Nav.Link as={Link} to="/">홈</Nav.Link>
                 <NavDropdown title="디스코드 봇" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
+                  <NavDropdown.Item as={Link} to="/bots/Azalea">
                     <img src={azalea} alt="" style={{ width: 27, marginRight: 10 }} />
                 Azalea
               </NavDropdown.Item>
