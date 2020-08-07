@@ -39,7 +39,7 @@
 }
 
 .Botproject-card {
-    width: 300px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
@@ -82,7 +82,7 @@
         font-size: 4vw;
     }
     .Botproject-card {
-        width: 420px;
+        max-width: 420px;
     }
     .Botproject-card-btn {
         margin-bottom: 0.25rem;
@@ -106,6 +106,7 @@
     .Title-title {
         font-size: 4vw;
     }
+
 }
 
 @media (min-width: 1200px) {
@@ -122,7 +123,7 @@
         font-size: 120pt;
     }
     .Botproject-card {
-        width: 500px;
+        max-width: 500px;
     }
     .Botproject-img {
         margin-left: 14px;
