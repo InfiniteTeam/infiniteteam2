@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 import logo from '../imgs/logo.png';
@@ -16,16 +15,16 @@ export default class Navibar extends Component {
       <>
         <div style={{ paddingTop: 65.94 }}>
           <Navbar bg="white" expand="sm" fixed="top" className="nav-item shadow rounded no-drag">
-            <Navbar.Brand as={Link} to="/">
+            <Navbar.Brand href="/">
               <img src={logo} alt="" style={{ width: 40, marginRight: 10 }} />
           InfiniteTeam
         </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link as={Link} to="/">홈</Nav.Link>
+                <Nav.Link href="/">홈</Nav.Link>
                 <NavDropdown title="디스코드 봇" id="basic-nav-dropdown">
-                  <NavDropdown.Item as={Link} to="/bots/Azalea">
+                  <NavDropdown.Item href="/bots/Azalea">
                     <img src={azalea} alt="" style={{ width: 27, marginRight: 10 }} />
                 Azalea
               </NavDropdown.Item>

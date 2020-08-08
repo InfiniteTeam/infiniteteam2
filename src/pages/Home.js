@@ -31,13 +31,18 @@ export default class Home extends Component {
                       >
                         초대하기
                     </Button>
-                      <Card.Link />
-                      <Card.Link
-                        className="Botproject-card-link text-infinite no-drag"
-                        href="#"
-                      >
-                        자세히 보기
-                    </Card.Link>
+                      {
+                        one.details_href &&
+                          <>
+                            <Card.Link />
+                            <Card.Link
+                              className="Botproject-card-link text-infinite no-drag"
+                              href={one.details_href}
+                            >
+                              자세히 보기
+                            </Card.Link>
+                          </>
+                      }
                     </>
                     : <Button variant="infinite" disabled>개발중</Button>
                 }
@@ -50,9 +55,9 @@ export default class Home extends Component {
 
     return (
       <>
-        <Title title="InfiniteTeam" subtitle="무한한 미래를 만들어갑니다" className="Title-gradient"/>
+        <Title title="InfiniteTeam" subtitle="무한한 미래를 만들어갑니다" className="Title-gradient" />
         <Container fluid>
-          <Container fluid="sm" className="Intro-ct">
+          <Container fluid="sm" className="ct Intro-ct">
             <h1 className="Header no-drag">
               디스코드 봇 프로젝트
             </h1>

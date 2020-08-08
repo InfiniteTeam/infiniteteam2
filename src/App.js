@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navibar from './components/Navibar'
+import { Navibar, Footer } from './components'
 import { Route, Switch } from 'react-router-dom';
 import { Home, NotFound } from './pages'
 import { Azalea } from './pages/bots'
@@ -14,6 +14,7 @@ export default class App extends Component {
           <Route exact path="/bots/azalea" component={Azalea}/>
           <Route component={NotFound}/>
         </Switch>
+        <Footer />
       </>
     );
   }

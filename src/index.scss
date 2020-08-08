@@ -8,6 +8,24 @@
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
 }
 
+/* Default Tags */
+
+h1 {
+    font-family: 'NanumSquare';
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'NanumSquare';
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'NanumBarunGothic';
+}
+
+
 .no-drag {
     -ms-user-select: none;
     -moz-user-select: -moz-none;
@@ -21,6 +39,8 @@
     background-color: rgb(87, 228, 157) !important;
     border-color: rgb(87, 228, 157) !important;
 }
+
+/* Colors */
 
 .btn-infinite:hover,
 .btn-infinite.hover,
@@ -41,6 +61,36 @@
     color: #ffffff !important;
     background-color: rgb(30, 197, 114) !important;
     border-color: rgb(30, 197, 114) !important;
+}
+
+
+
+
+.btn-azalea {
+    color: #ffffff;
+    background-color: rgb(254, 84, 147) !important;
+    border-color: rgb(254, 84, 147) !important;
+}
+
+.btn-azalea:hover,
+.btn-azalea.hover,
+.btn-azalea:focus,
+.btn-azalea.focus,
+.btn-azalea:active,
+.btn-azalea.active {
+    color: #ffffff !important;
+    background-color: rgb(235, 67, 129) !important;
+    border-color: rgb(235, 67, 129) !important;
+}
+
+.btn-azalea:active {
+    box-shadow: none !important;
+}
+
+.btn-azalea:active:focus {
+    color: #ffffff !important;
+    background-color: rgb(235, 67, 129) !important;
+    border-color: rgb(235, 67, 129) !important;
 }
 
 
@@ -69,14 +119,7 @@
 }
 
 .ct {
-    display: block;
-    justify-content: center;
-    .Title-ct {    
-        height: 320px;
-    }
-    .Intro-ct {
-        height: 1000px;
-    }
+    margin-bottom: 100px;
 }
 
 .Title-title {
@@ -244,7 +287,46 @@
     background-image: linear-gradient(120deg, rgb(254, 84, 147) 0%, rgb(249, 125, 115) 100%);
 }
 
-p {
-    font-size: 18px;
+.Azalea-intro-title {
+    margin-top: 5rem;
+}
+
+.Azalea-bottom-ct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+/* Footer */
+
+.Footer {
+    background-image: linear-gradient(120deg, #81f1bd 0%, #8aeedd 100%);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    h4 {
+        font-family: 'NanumSquare';
+        font-weight: 1000;
+        color: darkslategrey;
+    }
+    h5 {
+        font-family: 'NanumBarunGothic';
+        font-weight: 600;
+        font-size: 13pt;
+    }
+    p {
+        font-family: 'NanumSquare';
+        font-weight: 800;
+        color: darkslategrey;
+    }
+    a {
+        color: darkslategrey;
+        font-family: 'NanumBarunGothic';
+        text-decoration: underline;
+    }
+}
+
+.Footer-copyright {
     font-family: 'NanumBarunGothic';
+    font-size: 10pt;
 }

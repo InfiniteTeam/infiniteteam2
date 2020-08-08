@@ -6,7 +6,7 @@ export default class Title extends Component {
     return (
       <>
         <Container fluid className={`Title-section-bg ${this.props.className} no-drag`}>
-          <Container fluid="sm" className="Title-ct text-center">
+          <Container fluid="sm" className="ct Title-ct text-center">
             <h1 className="Title-title">
               {this.props.title}
             </h1>
