@@ -19,11 +19,12 @@
 			background-color: rgb(92, 92, 92);
 			border-radius: 5px 5px;
 			border-width: thin 5px;
+			padding: 0 0.2rem 0 0.35rem;
 		}
 	}
 	img {
-		margin-left: 0.5rem;
-		margin-right: 0.5rem;
+		margin-left: 0.4rem;
+		margin-right: 0.4rem;
 	}
 	@include media-breakpoint-up(xs) {
 		img {
