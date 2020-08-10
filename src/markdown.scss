@@ -1,6 +1,6 @@
 .markdown {
-	h1, h2 {
-		font-family: 'NanumGothic';
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'NanumSquare';
 	}
 	h1 {
 		font-weight: 1000;
@@ -13,5 +13,50 @@
 	}
 	p {
 		font-family: 'NanumBarunGothic';
+		font-size: 13pt;
+		code {
+			color: rgb(255, 255, 255);
+			background-color: rgb(92, 92, 92);
+			border-radius: 5px 5px;
+			border-width: thin 5px;
+		}
+	}
+	img {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+	@include media-breakpoint-up(xs) {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	
+	@include media-breakpoint-up(sm) {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	
+	@include media-breakpoint-up(md) {
+		img {
+			width: unset;
+			height: unset;
+		}
+	}
+	
+	@include media-breakpoint-up(lg) {
+		img {
+			width: unset;
+			height: unset;
+		}
+	}
+	
+	@include media-breakpoint-up(xl) {
+		img {
+			width: unset;
+			height: unset;
+		}
 	}
 }
