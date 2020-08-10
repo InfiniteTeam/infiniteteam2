@@ -26,22 +26,28 @@ export default class Navibar extends Component {
                 <NavDropdown title="디스코드 봇" id="basic-nav-dropdown">
                   <NavDropdown.Item href="/bots/Azalea">
                     <img src={azalea} alt="" style={{ width: 27, marginRight: 10 }} />
-                Azalea
-              </NavDropdown.Item>
+                    Azalea
+                  </NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
                     <img src={rtbot} alt="" style={{ width: 22, marginRight: 12, marginLeft: 2 }} />
-                알티봇
-              </NavDropdown.Item>
+                    알티봇
+                  </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="커뮤니티" id="basic-nav-dropdown">
                   <NavDropdown.Item as="a" href={config.discord_invite} target='_blank'>
                     <img src={discordicon} alt="" style={{ width: 27, marginRight: 10 }} />
-                디스코드 서포트 서버
-              </NavDropdown.Item>
+                    디스코드 서포트 서버
+                  </NavDropdown.Item>
                   <NavDropdown.Item as="a" href={config.navercafe} target="_blank">
                     <img src={navercafe} alt="" style={{ width: 22, marginRight: 12, marginLeft: 2 }} />
-                네이버 카페
-              </NavDropdown.Item>
+                    네이버 카페
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="봇 가이드" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/guide/azalea">
+                    <img src={azalea} alt="" style={{ width: 27, marginRight: 10 }} />
+                    Azalea
+                  </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
