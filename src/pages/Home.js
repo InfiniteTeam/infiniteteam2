@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 import botlist from '../datas/botlist';
-import Title from '../components/Title'
+import Title from '../components/Title';
 
 export default class Home extends Component {
   render() {

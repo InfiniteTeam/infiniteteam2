@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Title from '../../components/Title'
-import { Container, Button } from 'react-bootstrap'
-import botlist from '../../datas/botlist'
+import Title from '../../components/Title';
+import { Container, Button } from 'react-bootstrap';
+import botlist from '../../datas/botlist';
 
 export default class Home extends Component {
   render() {
