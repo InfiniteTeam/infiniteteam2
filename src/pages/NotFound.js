@@ -6,7 +6,7 @@ export default class NotFound extends Component {
   render() {
     return (
       <>
-        <Container fluid className="text-center"
+        <Container fluid className="text-center no-drag"
           style={{
             marginTop: 250
           }}

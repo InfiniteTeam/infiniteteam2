@@ -17,8 +17,8 @@ export default class Navibar extends Component {
           <Navbar bg="white" expand="sm" fixed="top" className="nav-item shadow rounded no-drag">
             <Navbar.Brand href="/">
               <img src={logo} alt="" style={{ width: 40, marginRight: 10 }} />
-          InfiniteTeam
-        </Navbar.Brand>
+              InfiniteTeam
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">

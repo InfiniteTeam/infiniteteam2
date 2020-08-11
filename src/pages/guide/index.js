@@ -1,1 +1,1 @@
-export { default as AzaleaGuide } from './AzaleaGuide'
+export { default as Guide } from './Guide'

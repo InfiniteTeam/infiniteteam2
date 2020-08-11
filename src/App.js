@@ -3,7 +3,8 @@ import { Navibar, Footer } from './components'
 import { Route, Switch } from 'react-router-dom';
 import { Home, NotFound } from './pages';
 import { Azalea } from './pages/bots';
-import { AzaleaGuide } from './pages/guide';
+import { Guide } from './pages/guide';
+import guides from './pages/guide/guides';
 
 export default class App extends Component {
   render() {
@@ -13,7 +14,8 @@ export default class App extends Component {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/bots/azalea" component={Azalea}/>
-          <Route exact path="/guide/azalea" component={AzaleaGuide}/>
+          <Route exact path="/guide/:whose" render={props => <Guide whose={props.match.params.whose} name={guides.filter(one => one.home)[0].name} />} />
+          <Route exact path="/guide/:whose/:id" render={props => <Guide whose={props.match.params.whose} name={props.match.params.id} />} />
           <Route component={NotFound}/>
         </Switch>
         <Footer />
