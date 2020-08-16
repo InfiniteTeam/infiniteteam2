@@ -1,5 +1,4 @@
-import { getting_started } from './source';
-import { make_char } from './source';
+import { getting_started, make_char, manage_char } from './source';
 
 const guides = [
   {
@@ -14,7 +13,14 @@ const guides = [
     title: "캐릭터 생성",
     src: make_char,
     whose: "azalea",
-    home: true
+    home: false
+  },
+  {
+    name: "manage_char",
+    title: "캐릭터 관리",
+    src: manage_char,
+    whose: "azalea",
+    home: false
   }
 ];
 

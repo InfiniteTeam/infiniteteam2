@@ -4,9 +4,9 @@ import guides from '../pages/guide/guides';
 export default class GuideSidebar extends Component {
   render() {
     const ls = guides.map(
-      (one) => (
+      (one, index) => (
         this.props.whose === one.whose &&
-          <a href={`/guide/${one.whose}/${one.name}`} style={{
+          <a key={index} href={`/guide/${one.whose}/${one.name}`} style={{
           }}>
             {one.title
           }</a>

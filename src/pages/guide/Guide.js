@@ -5,6 +5,7 @@ import heading from '../../components/MarkdownRenderer';
 import { GuideSidebar } from '../../components';
 import guides from './guides';
 import { notfound } from './source';
+import Twemoji from 'react-twemoji';
 
 export default class Guide extends Component {
   render() {
@@ -35,15 +36,17 @@ export default class Guide extends Component {
               }}
               className="shadow-sm">
                 <div className="pt-5" />
-                <ReactMarkdown
-                  className="markdown"
-                  source={src}
-                  renderers={{
-                    heading: heading
-                  }}
-                  escapeHtml={false}
-                />
-                <div className="pt-5" />
+                <Twemoji>
+                  <ReactMarkdown
+                    className="markdown"
+                    source={src}
+                    renderers={{
+                      heading: heading
+                    }}
+                    escapeHtml={false}
+                  />
+                  <div className="pt-5" />
+                </Twemoji>
               </Container>
             </Col>
           </Row>
