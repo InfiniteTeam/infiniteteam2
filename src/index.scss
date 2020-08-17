@@ -180,6 +180,39 @@ p {
     margin-top: 5px;
 }
 
+/* Members */
+
+.Members-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    border: none;
+}
+
+.Members-card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.Members-card-title {
+    font-family: "NanumSquare";
+    font-weight: 800;
+    font-size: 18pt;
+}
+
+.Members-card-sub {
+    font-family: "NanumBarunGothic";
+    font-weight: bold;
+}
+
+.Members-card-desc {
+    font-family: "NanumBarunGothic";
+    font-size: 12pt;
+}
+
 /* Azalea */
 
 .Azalea-title-gradient {

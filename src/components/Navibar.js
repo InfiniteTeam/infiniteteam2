@@ -3,7 +3,6 @@ import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 import logo from '../imgs/logo.png';
 import discordicon from '../imgs/Discord-Logo-Black.svg';
-import navercafe from '../imgs/navercafe.jpg';
 import azalea from '../imgs/Azalea.jpg';
 import rtbot from '../imgs/rtbot.jpg';
 
@@ -37,10 +36,6 @@ export default class Navibar extends Component {
                   <NavDropdown.Item as="a" href={config.discord_invite} target='_blank'>
                     <img src={discordicon} alt="" style={{ width: 27, marginRight: 10 }} />
                     디스코드 서포트 서버
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as="a" href={config.navercafe} target="_blank">
-                    <img src={navercafe} alt="" style={{ width: 22, marginRight: 12, marginLeft: 2 }} />
-                    네이버 카페
                   </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="봇 가이드" id="basic-nav-dropdown">

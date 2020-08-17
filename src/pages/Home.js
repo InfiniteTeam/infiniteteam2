@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import botlist from '../datas/botlist';
+import members from '../datas/members';
 import Title from '../components/Title';
 
 export default class Home extends Component {
   render() {
     const bots = botlist.map(
-      (one) => (
-        <Col xl={6} lg={6} md={6}>
+      (one, index) => (
+        <Col key={index} xl={6} lg={6} md={6}>
           <Card className="Botproject-card flex-row flex-wrap">
             <Col xl={4} lg={5} xs={9} className="Botproject-img">
               <Card.Img variant="top" src={one.img} style={{ marginTop: '1rem' }} />
@@ -51,6 +55,28 @@ export default class Home extends Component {
           </Card>
         </Col>
       )
+    );
+
+    const membs = members.map(
+      (one, index) => (
+        <Col key={index} xl={4} lg={6} md={6}>
+          <Card className="Members-card">
+            <Card.Img variant="top" src={one.img} />
+            <Card.Body className="Members-card-body text-center">
+              <Card.Title className="Members-card-title">{one.title}</Card.Title>
+              <Card.Subtitle className="Members-card-sub">{one.role}</Card.Subtitle>
+              <Card.Text className="Members-card-desc pt-2">
+                {one.description}
+              </Card.Text>
+              {
+                one.github && <Card.Link href={one.github} title="GitHub 링크" target="_blank">
+                  <FontAwesomeIcon icon={faGithub} size="lg"/>
+                </Card.Link>
+              }
+            </Card.Body>
+          </Card>
+        </Col>
+      )
     )
 
     return (
@@ -64,6 +90,15 @@ export default class Home extends Component {
             <Container>
               <Row className="no-gutters">
                 {bots}
+              </Row>
+            </Container>
+
+            <h1 className="Header no-drag">
+              멤버 소개
+            </h1>
+            <Container>
+              <Row className="no-gutters">
+                {membs}
               </Row>
             </Container>
           </Container>

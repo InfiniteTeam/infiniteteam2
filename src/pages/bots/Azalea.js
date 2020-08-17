@@ -39,11 +39,20 @@ export default class Home extends Component {
               <Button
                 as="a"
                 variant="azalea"
-                className="Botproject-card-btn"
+                className="Botproject-card-btn mr-5"
                 href={botlist.filter(one => one.name === 'azalea')[0].invite}
                 target="_blank"
               >
                 초대하기
+              </Button>
+              <Button
+                as="a"
+                variant="azalea"
+                className="Botproject-card-btn"
+                href="/guide/azalea"
+                target="_blank"
+              >
+                봇 가이드
               </Button>
             </Container>
           </Container>
