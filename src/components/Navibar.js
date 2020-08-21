@@ -44,6 +44,7 @@ export default class Navibar extends Component {
                     Azalea
                   </NavDropdown.Item>
                 </NavDropdown>
+				<Nav.Link href="/recruitment">멤버 모집</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
