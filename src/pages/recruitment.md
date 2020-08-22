@@ -106,4 +106,15 @@
 - 자신이 실제로 만든 작품을 제출해주세요.
 
 **우대 조건**
-- 픽셀(도트) 아트 그리기 가능
+- 픽셀(도트) 아트 그리기 가능 
+
+<p align="center">
+  <a
+    class="btn btn-infinite"
+	href="https://forms.gle/hvFd5LQNjMQnHGcF8"
+	role="button"
+	target="_blank"
+  >
+    지원하기
+  </a>
+</p>
