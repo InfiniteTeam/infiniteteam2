@@ -24,6 +24,15 @@ export default class Home extends Component {
                   {one.description}
                 </Card.Text>
                 {
+                  one.beta &&
+                    <Card.Text style={{
+                      color: 'orangered',
+                      fontSize: '10pt'
+                    }}>
+                      베타 버전입니다. 기능이 불안정할 수 있으며 예고없이 재시작, 점검, 기능 추가 또는 제거가 발생할 수 있습니다.
+                    </Card.Text>
+                }
+                {
                   one.invite
                     ? <>
                       <Button

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Container } from 'react-bootstrap';
 import heading from '../components/MarkdownRenderer';
-import src from './recruitment.md'
 
 export default class Guide extends Component {
   render() {
@@ -16,7 +15,7 @@ export default class Guide extends Component {
         <div className="pt-5" />
         <ReactMarkdown
           className="markdown"
-          source={src}
+          source={this.props.src}
           renderers={{
             heading: heading
           }}
