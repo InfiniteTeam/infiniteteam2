@@ -7,16 +7,16 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <Title title="Azalea" subtitle="텍스트 RPG 봇" className="Azalea-title-gradient" />
+        <Title title="RT Bot" subtitle="텍스트 미니게임봇" className="Azalea-title-gradient" />
         <Container fluid>
           <Container fluid="sm" className="ct">
             <h1 className="Header">
-              Azalea - 텍스트 RPG 게임봇
+              알티봇 - 텍스트형 미니게임봇
             </h1>
             <Container>
               <p>
-                Azalea - 아젤리아는 텍스트형 RPG 디스코드 게임봇입니다.<br />
-                자신의 캐릭터를 키우고 다양한 컨텐츠를 즐겨보세요.
+                RT Bot 알티봇은 텍스트형 도박기반의 미니게임 디스코드 게임봇입니다.<br />
+                자신의 돈을 모아서 랭킹에도 등재되고 다양한 미니게임을 즐겨보세요.
               </p>
 
               <h2 className="Azalea-intro-title no-drag">
