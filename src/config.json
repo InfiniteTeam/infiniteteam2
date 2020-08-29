@@ -1,4 +1,5 @@
 {
     "discord_invite": "https://discord.gg/7aFczQk",
-    "navercafe": "https://cafe.naver.com/infteam"
+    "navercafe": "https://cafe.naver.com/infteam",
+    "api": "http://localhost:3001"
 }

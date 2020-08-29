@@ -40,7 +40,7 @@ export default class Home extends Component {
                 as="a"
                 variant="azalea"
                 className="Botproject-card-btn mr-5"
-                href={botlist.filter(one => one.name === 'azalea')[0].invite}
+                href={botlist.find(one => one.name === 'azalea').invite}
                 target="_blank"
               >
                 초대하기

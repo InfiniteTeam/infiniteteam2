@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navibar, Footer } from './components'
 import { Route, Switch } from 'react-router-dom';
-import { Home, NotFound, Mdpage } from './pages';
+import { Home, NotFound, Mdpage, Botstatus } from './pages';
 import { Azalea } from './pages/bots';
 import { Guide } from './pages/guide';
 import guides from './pages/guide/guides';
@@ -22,6 +22,7 @@ export default class App extends Component {
           <Route exact path="/privacy" render={() => <Mdpage src={privacy}/>}/>
 		      <Route exact path="/recruitment" render={() => <Mdpage src={recruitment}/>}/>
           <Route exact path="/tos" render={() => <Mdpage src={tos}/>}/>
+          <Route exact path="/status" render={() => <Botstatus/>}/>
           <Route component={NotFound}/>
         </Switch>
         <Footer />
