@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import axios from 'axios'
 import config from '../config.json'
 import url from 'url'
@@ -34,8 +34,41 @@ export default class Home extends Component {
       })
   }
 
+  FormatStatus(name) {
+    var o = this.state.status.find(s => s.name === name)
+    var status_text
+    if (o) {
+      switch (o.status) {
+        case 'online':
+          status_text = '온라인'
+          break
+        case 'idle':
+          status_text = '점검 중'
+          break
+        case 'dnd':
+          status_text = '재시작 준비 중'
+          break
+        default:
+          status_text = '오프라인'
+      }
+      return (
+        <>
+          <div className={`circle ${o.status}`}/>
+          {status_text}
+        </>
+        
+      )
+    }
+    return '정보를 받아오고 있습니다...'
+  }
+
   componentDidMount() {
+    this.status_interval = setInterval(this.LoadStatus, 2000)
     this.LoadStatus()
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.status_interval)
   }
 
   render() {
@@ -50,9 +83,13 @@ export default class Home extends Component {
             <Col xl={8} lg={7}>
               <Card.Body>
                 <Card.Title className="Botproject-card-title">{one.title}</Card.Title>
-                <Card.Text className="Botproject-card-dsec">
+                <Card.Text className="Botproject-card-dsec" as="div" style={{
+                  display: 'flex',
+                  justifyContent: 'left',
+                  alignItems: 'center'
+                }}>
                   {
-                    this.state.status.find(s => s.name === one.name) === null & this.state.status.find(s => s.name === one.name).status
+                    this.FormatStatus(one.name)
                   }
                 </Card.Text>
               </Card.Body>
@@ -67,9 +104,8 @@ export default class Home extends Component {
         <Title title="봇 서비스 상태" subtitle="Bot Status" className="Botstatus-title-gradient" />
         <Container fluid>
           <Container fluid="sm" className="ct Intro-ct">
-            <Button onClick={() => { this.setState({ status: this.state.status + 1 }) }} />
             <h1 className="Header no-drag">
-              
+              실시간 서비스 상태
             </h1>
             <Container>
               <Row className="no-gutters">
