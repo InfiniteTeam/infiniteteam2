@@ -13,7 +13,7 @@ const members = [
     name: "coin",
     title: "코인",
     role: "개발자&디자이너",
-    description: "↙바보",
+    description: "↙천재",
     img: imgs.coin,
     github: "https://github.com/COIN-KR"
   },
@@ -37,7 +37,7 @@ const members = [
     name: "thphec",
     title: "트펙",
     role: "개발자",
-    description: "←바보",
+    description: "←천재",
     img: imgs.thphec,
     github: "https://github.com/gimon0330"
   }
