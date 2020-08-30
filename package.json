@@ -155,5 +155,6 @@
   "homepage": "https://inft.kr",
   "devDependencies": {
     "cross-env": "^7.0.2"
-  }
+  },
+  "proxy": "http://arpa.kro.kr:3001"
 }

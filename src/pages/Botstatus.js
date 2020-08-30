@@ -22,7 +22,7 @@ export default class Home extends Component {
 
   LoadStatus = async () => {
     axios
-      .get(url.resolve(config.api, 'bot_status'))
+      .get(url.resolve('/api/bot_status'))
       .then(res => {
         
         this.setState({
