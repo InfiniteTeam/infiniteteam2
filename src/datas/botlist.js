@@ -1,6 +1,7 @@
-import azalea from '../imgs/Azalea.jpg';
-import rtbot from '../imgs/rtbot.jpg';
-import xeno from '../imgs/xeno.jpg';
+import azalea from '../imgs/Azalea.jpg'
+import rtbot from '../imgs/rtbot.jpg'
+import xeno from '../imgs/xeno.jpg'
+import aztra from '../imgs/aztra.png'
 
 const botlist = [
   {
@@ -29,7 +30,16 @@ const botlist = [
     invite: null,
     details_href: null,
     beta: false
+  },
+  {
+    name: "aztra",
+    title: "Aztra Beta",
+    img: aztra,
+    description: "미래를 바꿀 관리봇, 완성보다 완성도를 위해.",
+    invite: null,
+    details_href: null,
+    beta: false
   }
-];
+]
 
-export default botlist;
+export default botlist
