@@ -13,7 +13,7 @@ export default class Navibar extends Component {
     return (
       <>
         <div style={{ paddingTop: 65.94 }}>
-          <Navbar bg="white" expand="sm" fixed="top" className="nav-item shadow rounded no-drag">
+          <Navbar bg="white" expand="sm" fixed="top" className="nav-item shadow no-drag">
             <Navbar.Brand href="/">
               <img src={logo} alt="" style={{ width: 40, marginRight: 10 }} />
               InfiniteTeam
