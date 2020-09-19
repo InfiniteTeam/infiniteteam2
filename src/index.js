@@ -2,10 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import config from './config.json'
 
 import App from './App';
 
 import './index.scss';
+
+const ReactGA = require('react-ga')
+ReactGA.initialize(config.ga_id)
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
