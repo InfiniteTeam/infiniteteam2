@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import axios from 'axios'
-import config from '../config.json'
 import url from 'url'
 
 import botlist from '../datas/botlist'
