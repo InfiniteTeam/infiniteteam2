@@ -40,6 +40,14 @@ const members = [
     description: "←바보",
     img: imgs.thphec,
     github: "https://github.com/gimon0330"
+  },
+  {
+    name: "roy",
+    title: "로이",
+    role: "개발자",
+    description: null,
+    img: 'https://cdn.discordapp.com/embed/avatars/4.png',
+    github: null
   }
 ];
 
