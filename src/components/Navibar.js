@@ -4,7 +4,6 @@ import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import logo from '../imgs/logo.png';
 import discordicon from '../imgs/Discord-Logo-Black.svg';
 import azalea from '../imgs/Azalea.jpg';
-import rtbot from '../imgs/rtbot.jpg';
 import aztra from '../imgs/aztra.png';
 
 import config from '../config.json';
