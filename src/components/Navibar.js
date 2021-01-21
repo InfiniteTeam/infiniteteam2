@@ -5,6 +5,7 @@ import logo from '../imgs/logo.png';
 import discordicon from '../imgs/Discord-Logo-Black.svg';
 import azalea from '../imgs/Azalea.jpg';
 import rtbot from '../imgs/rtbot.jpg';
+import aztra from '../imgs/aztra.png';
 
 import config from '../config.json';
 
@@ -27,9 +28,9 @@ export default class Navibar extends Component {
                     <img src={azalea} alt="" style={{ width: 27, marginRight: 10 }} />
                     Azalea
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    <img src={rtbot} alt="" style={{ width: 22, marginRight: 12, marginLeft: 2 }} />
-                    알티봇
+                  <NavDropdown.Item href="https://aztra.xyz">
+                    <img src={aztra} alt="" style={{ width: 22, marginRight: 12, marginLeft: 2 }} />
+                    Aztra
                   </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="커뮤니티" id="basic-nav-dropdown">
@@ -43,9 +44,13 @@ export default class Navibar extends Component {
                     <img src={azalea} alt="" style={{ width: 27, marginRight: 10 }} />
                     Azalea
                   </NavDropdown.Item>
+                  <NavDropdown.Item href="https://aztra.xyz/docs">
+                    <img src={aztra} alt="" style={{ width: 27, marginRight: 10 }} />
+                    Aztra
+                  </NavDropdown.Item>
                 </NavDropdown>
                 {/*<Nav.Link href="/status">봇 상태</Nav.Link>*/}
-                <Nav.Link href="/recruitment">멤버 모집</Nav.Link>
+                {/*<Nav.Link href="/recruitment">멤버 모집</Nav.Link>*/}
               </Nav>
             </Navbar.Collapse>
           </Navbar>

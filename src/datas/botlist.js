@@ -35,8 +35,8 @@ const botlist = [
     name: "aztra",
     title: "Aztra Beta",
     img: aztra,
-    description: "미래를 바꿀 관리봇, 완성보다 완성도를 위해.",
-    invite: null,
+    description: "미래를 바꿀 디스코드 관리봇, Aztra.",
+    invite: 'https://aztra.xyz',
     details_href: null,
     beta: false
   }

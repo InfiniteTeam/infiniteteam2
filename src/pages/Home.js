@@ -25,27 +25,29 @@ export default class Home extends Component {
                 </Card.Text>
                 {
                   one.beta &&
-                    <Card.Text style={{
-                      color: 'orangered',
-                      fontSize: '10pt'
-                    }}>
-                      베타 버전입니다. - 기능이 불안정할 수 있으며 예고없이 재시작, 점검, 기능 추가 또는 제거가 발생할 수 있습니다.
+                  <Card.Text style={{
+                    color: 'orangered',
+                    fontSize: '10pt'
+                  }}>
+                    베타 버전입니다. - 기능이 불안정할 수 있으며 예고없이 재시작, 점검, 기능 추가 또는 제거가 발생할 수 있습니다.
                     </Card.Text>
                 }
                 {
                   one.invite
-                    ? <>
-                      <Button
-                        as="a"
-                        variant="infinite"
-                        className="Botproject-card-btn"
-                        href={one.invite}
-                        target="_blank"
-                      >
-                        초대하기
-                    </Button>
-                      {
-                        one.details_href &&
+                    ? one.name === 'aztra'
+                      ? <Button variant="infinite" href={one.invite}>사이트로 이동</Button>
+                      : <>
+                        <Button
+                          as="a"
+                          variant="infinite"
+                          className="Botproject-card-btn"
+                          href={one.invite}
+                          target="_blank"
+                        >
+                          초대하기
+                        </Button>
+                        {
+                          one.details_href &&
                           <>
                             <Card.Link />
                             <Card.Link
@@ -55,8 +57,8 @@ export default class Home extends Component {
                               자세히 보기
                             </Card.Link>
                           </>
-                      }
-                    </>
+                        }
+                      </>
                     : <Button variant="infinite" disabled>개발중</Button>
                 }
               </Card.Body>
@@ -79,7 +81,7 @@ export default class Home extends Component {
               </Card.Text>
               {
                 one.github && <Card.Link href={one.github} title="GitHub 링크" target="_blank">
-                  <FontAwesomeIcon icon={faGithub} size="lg"/>
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
                 </Card.Link>
               }
             </Card.Body>

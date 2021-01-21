@@ -19,10 +19,10 @@ export default class App extends Component {
           <Route exact path="/bots/azalea" component={Azalea}/>
           <Route exact path="/guide/:whose" render={props => <Guide whose={props.match.params.whose} name={guides.filter(one => one.home && props.match.params.whose === one.whose)[0].name} />} />
           <Route exact path="/guide/:whose/:id" render={props => <Guide whose={props.match.params.whose} name={props.match.params.id} />} />
-          <Route exact path="/privacy" render={() => <Mdpage src={privacy}/>}/>
-		      <Route exact path="/recruitment" render={() => <Mdpage src={recruitment}/>}/>
-          <Route exact path="/tos" render={() => <Mdpage src={tos}/>}/>
-          <Route exact path="/status" render={() => <Botstatus/>}/>
+          <Route exact path="/privacy" render={props => <Mdpage src={privacy} {...props}/>}/>
+		      <Route exact path="/recruitment" render={props => <Mdpage src={recruitment} {...props}/>}/>
+          <Route exact path="/tos" render={props => <Mdpage src={tos} {...props}/>}/>
+          <Route exact path="/status" render={props => <Botstatus {...props}/>}/>
           <Route component={NotFound}/>
         </Switch>
         <Footer />
